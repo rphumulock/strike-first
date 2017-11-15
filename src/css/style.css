@@ -8,8 +8,8 @@
 
 body {
    font-family: 'Audiowide';
-   background-color: #131318;
-   text-shadow: 2px 2px black;  
+   text-shadow: 2px 2px black;
+   background-color: #222222;  
    color: white;
  }
 
@@ -26,7 +26,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: red;
 }
 
 .parallax-container {
@@ -42,7 +42,6 @@ p {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
   }
   #index-banner .section {
     top: 10%;
@@ -65,3 +64,8 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.footer-copyright {
+  background-color: #222222;
+}
+
