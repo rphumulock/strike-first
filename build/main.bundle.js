@@ -88,7 +88,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Custom Stylesheet */\r\n/**\r\n * Use this file to override Materialize files so you can update\r\n * the core Materialize files in the future\r\n *\r\n * Made By MaterializeCSS.com\r\n */\r\n\r\nbody {\r\n   font-family: 'Audiowide';\r\n   text-shadow: 2px 2px black;\r\n   background-color: #222222;  \r\n   color: white;\r\n }\r\n\r\nnav {\r\n  background-color: red;\r\n}\r\n\r\na.brand-logo {\r\n  font-size: 1.5em;\r\n}\r\n\r\np {\r\n  line-height: 2rem;\r\n}\r\n\r\n.button-collapse {\r\n  color: red;\r\n}\r\n\r\n.parallax-container {\r\n  min-height: 380px;\r\n  line-height: 0;\r\n  height: auto;\r\n  color: rgba(255,255,255,.9);\r\n}\r\n  .parallax-container .section {\r\n    width: 100%;\r\n  }\r\n\r\n@media only screen and (max-width : 992px) {\r\n  .parallax-container .section {\r\n    position: absolute;\r\n  }\r\n  #index-banner .section {\r\n    top: 10%;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width : 600px) {\r\n  #index-banner .section {\r\n    top: 0;\r\n  }\r\n}\r\n\r\n.icon-block {\r\n  padding: 0 15px;\r\n}\r\n.icon-block .material-icons {\r\n  font-size: inherit;\r\n}\r\n\r\nfooter.page-footer {\r\n  margin: 0;\r\n}\r\n\r\n.footer-copyright {\r\n  background-color: #222222;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "/* Custom Stylesheet */\r\n/**\r\n * Use this file to override Materialize files so you can update\r\n * the core Materialize files in the future\r\n *\r\n * Made By MaterializeCSS.com\r\n */\r\n\r\nbody {\r\n   font-family: 'Audiowide';\r\n   text-shadow: 2px 2px black;\r\n   background-color: #222222;  \r\n   color: white;\r\n }\r\n\r\nnav {\r\n  background-color: red;\r\n}\r\n\r\na.brand-logo {\r\n  font-size: 1.5em;\r\n}\r\n\r\np {\r\n  line-height: 2rem;\r\n}\r\n\r\n.button-collapse {\r\n  color: red;\r\n}\r\n\r\n.parallax-container {\r\n  min-height: 380px;\r\n  line-height: 0;\r\n  height: auto;\r\n  color: rgba(255,255,255,.9);\r\n}\r\n\r\n.parallax-container .section {\r\n   width: 100%;\r\n}\r\n\r\n  .header {\r\n    font-size: 3em; \r\n  }\r\n\r\n@media only screen and (max-width : 992px) {\r\n  .parallax-container .section {\r\n    position: absolute;\r\n  }\r\n  #index-banner .section {\r\n    top: 10%;\r\n  }\r\n  .header {\r\n    font-size: 2em; \r\n  }\r\n}\r\n\r\n@media only screen and (max-width : 600px) {\r\n  #index-banner .section {\r\n    top: 0;\r\n  }\r\n  .header {\r\n    font-size: 1em; \r\n  }\r\n}\r\n\r\n.icon-block {\r\n  padding: 0 15px;\r\n}\r\n.icon-block .material-icons {\r\n  font-size: inherit;\r\n}\r\n\r\nfooter.page-footer {\r\n  margin: 0;\r\n}\r\n\r\n.footer-copyright {\r\n  background-color: #222222;\r\n}\r\n\r\nvideo {\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -13622,6 +13622,13 @@ module.exports = __webpack_require__.p + "450517eec55f31928c8ec434a1add40c.jpg";
 
 /***/ }),
 
+/***/ "./src/assets/movietest.mp4":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3e8c8e120010f9d535370e2cf4e1e752.mp4";
+
+/***/ }),
+
 /***/ "./src/css/materialize.min.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13778,10 +13785,16 @@ var _boxer = __webpack_require__("./src/assets/boxer.jpg");
 
 var _boxer2 = _interopRequireDefault(_boxer);
 
+var _movietest = __webpack_require__("./src/assets/movietest.mp4");
+
+var _movietest2 = _interopRequireDefault(_movietest);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var image1 = document.getElementById('background1').setAttribute('src', _boxer2.default);
-var image2 = document.getElementById('background2').setAttribute('src', _boxing_ring2.default);
+//document.getElementById('background1').setAttribute('src', boxer);
+document.getElementById('background2').setAttribute('src', _boxing_ring2.default);
+document.getElementById('video').setAttribute('src', _movietest2.default);
+document.getElementById('vid').setAttribute('src', _movietest2.default);
 
 /***/ }),
 
