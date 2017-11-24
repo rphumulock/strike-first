@@ -33,7 +33,11 @@ module.exports = {
                 loader: 'file-loader'
             },
             {
-                test: /\.(png|svg|jpe?g|jp2)$/,
+                test: /\.(mp4)$/,
+                loader: 'file-loader'
+            },
+            {
+                test: /\.(png|svg|jpe?g)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -49,16 +53,37 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['build']),
         new ExtractTextPlugin("styles.css"),
+        new Webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            hash: true,
+            template: './src/index.html',
+            chunks: ['main'],
+            filename: './index.html' //relative to root of the application
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            template: './src/about.html',
+            chunks: ['main'],
+            filename: './about.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            template: './src/kids.html',
+            chunks: ['main'],
+            filename: './kids.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            template: './src/classes.html',
+            chunks: ['main'],
+            filename: './classes.html'
         }),
         new Webpack.ProvidePlugin({ // inject ES5 modules as global vars
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             Tether: 'tether'
-        }),
-        new Webpack.NamedModulesPlugin()
+        })
     ],
     devtool: 'cheap-module-source-map',
     devServer: {
