@@ -6,5 +6,5 @@ import ish from '../assets/Ish.jpg';
 
 console.log(process.env.NODE_ENV);
 
-document.getElementById('background3').setAttribute('src', ish);
+document.getElementById('background').setAttribute('src', ish);
 
