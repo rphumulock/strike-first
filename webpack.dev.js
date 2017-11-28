@@ -8,7 +8,7 @@ module.exports = merge(common, {
         path: Path.resolve(__dirname, 'build'),
         filename: '[name].js'
     },
-    devtool: 'cheap-module-source-map',
+    devtool: 'inline-source-map',
     devServer: {
         contentBase: './build'
     },

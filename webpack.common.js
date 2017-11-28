@@ -7,6 +7,7 @@ const Webpack = require('webpack');
 module.exports = {
     entry: {
         index: './src/js/index.js',
+        home: './src/js/home.js',
         about: './src/js/about.js',
         classes: './src/js/classes.js',
         common: [
@@ -38,7 +39,7 @@ module.exports = {
                 loader: 'file-loader'
             },
             {
-                test: /\.(mp4)$/,
+                test: /\.(mp4|webm)$/,
                 loader: 'file-loader'
             },
             {
@@ -67,7 +68,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html',
-            chunks: ['runtime' , 'common', 'index']
+            chunks: ['runtime', 'common', 'index']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/home.html',
+            filename: './home.html',
+            chunks: ['runtime', 'common', 'home']
         }),
         new HtmlWebpackPlugin({
             template: './src/about.html',

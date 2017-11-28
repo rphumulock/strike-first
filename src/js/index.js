@@ -1,15 +1,21 @@
-import '../css/materialize.min.css';
-import '../css/style.css';
-import '../js/init.js';
-import '../js/materialize.min.js';
-import boxing_ring from '../assets/boxing_ring.jpg';
-import boxer from '../assets/boxer.jpg';
-import ish from '../assets/Ish.jpg';
-import vid1 from '../assets/mov.mp4';
+import Vivus from 'vivus';
+import drawing from '../assets/cobrasnek.svg'
 
-console.log(process.env.NODE_ENV);
+(function () {
+  window.onload = () => {
+    let visited = localStorage.getItem("visited");
+    if (visited) {
+      window.location.assign("home.html");
+    } else {
+      localStorage.setItem("visited", "true");
+      window.location.assign("home.html");
+      /*new Vivus(drawing, { duration: 100 }, () => {
+        window.setTimeout(() => {
+          window.location.assign("home.html");
+        }, 5000);
+      });*/
+    }
+  };
+})();
 
-document.getElementById('background2').setAttribute('src', boxing_ring);
-document.getElementById('video').setAttribute('src', vid1);
-document.getElementById('vid').setAttribute('src', vid1);
 

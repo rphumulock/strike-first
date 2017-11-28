@@ -17,6 +17,16 @@ nav {
   background-color: red;
 }
 
+.side-nav {
+  background-color: #222222;
+}
+.side-nav li>a { 
+  color: white;
+}
+.side-nav li>a:hover { 
+  background-color: red;
+}
+
 .button-collapse {
   color: red;
 }
@@ -71,4 +81,10 @@ footer.page-footer {
 video {
   width: 100%;
   height: auto;
+}
+
+img {
+	width:auto;
+	max-width:100%;
+	height:auto;
 }

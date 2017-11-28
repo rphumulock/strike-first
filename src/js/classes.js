@@ -4,6 +4,9 @@ import '../js/init.js';
 import '../js/materialize.min.js';
 import boxer from '../assets/boxer.jpg';
 
-console.log(process.env.NODE_ENV);
+(function () {
+    'use strict';
 
-document.getElementById('background').setAttribute('src', boxer);
+    console.log(process.env.NODE_ENV);
+    document.getElementById('background').setAttribute('src', boxer);
+})();
