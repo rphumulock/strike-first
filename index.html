@@ -10,6 +10,21 @@
 <link href="./styles.css" rel="stylesheet"></head>
 
 <body>
+  <script>
+    let visited = localStorage.getItem("visited");
+    if (visited) {
+      window.location.assign("home.html");
+    } else {
+      localStorage.setItem("visited", "true");
+      window.location.assign("home.html");
+      new Vivus('hi-there',
+        {
+          type: 'sync',
+          duration: 200,
+        }, () => {
+          window.location.assign("home.html");
+        });
+    }</script>
   <div class="row">
     <div class="col s12">
       <div class="center">
@@ -241,7 +256,7 @@
       </div>
     </div>
   </div>
-<script type="text/javascript" src="./runtime.6dcdf714cc1b67e04bf8.js"></script><script type="text/javascript" src="./common.1611ca9c00843cf4778f.js"></script><script type="text/javascript" src="./index.37c78ef037a8c70189ff.js"></script></body>
+<script type="text/javascript" src="./runtime.15d9a573ceb6080450b3.js"></script><script type="text/javascript" src="./common.1611ca9c00843cf4778f.js"></script><script type="text/javascript" src="./index.7d091eb6413e63d3a5f6.js"></script></body>
 
 </html>
 
