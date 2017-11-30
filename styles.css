@@ -126,3 +126,7 @@ img {
 ul.info-list li {
   margin: 5px 0;
 }
+
+#hi {
+  opacity: 0; 
+}
