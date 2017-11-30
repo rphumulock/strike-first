@@ -1,4 +1,4 @@
-webpackJsonp([4],{Jn6l:function(L,M,t){"use strict";var u,j;/**
+webpackJsonp([3],{Jn6l:function(L,M,t){"use strict";var u,j;/**
  * vivus - JavaScript library to make drawing animation on SVG
  * @version v0.4.2
  * @link https://github.com/maxwellito/vivus
