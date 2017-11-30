@@ -48,7 +48,7 @@ body {
  }
 
 nav {
-  background-color: red;
+  background-color: #f44336;
 }
 
 .side-nav {
@@ -58,11 +58,11 @@ nav {
   color: white;
 }
 .side-nav li>a:hover { 
-  background-color: red;
+  background-color: #f44336;
 }
 
 .button-collapse {
-  color: red;
+  color: #f44336;
 }
 
 .parallax-container {
