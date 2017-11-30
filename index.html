@@ -16,14 +16,12 @@
       window.location.assign("home.html");
     } else {
       localStorage.setItem("visited", "true");
-      window.location.assign("home.html");
-      new Vivus('hi-there',
-        {
-          type: 'sync',
-          duration: 200,
-        }, () => {
-          window.location.assign("home.html");
-        });
+      new Vivus('hi-there', {
+        type: 'sync',
+        duration: 200,
+      }, () => {
+        window.location.assign("home.html");
+      });
     }</script>
   <div class="row">
     <div class="col s12">
